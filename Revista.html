@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clapps!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <meta name="description" content="Donde quieras encontrarte">
     <meta name="robots" content="index, follow">
     
     <link rel="icon" type="image/jpg" href="">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
 
 </head>
 <body> 
@@ -23,13 +23,31 @@
     <nav class="navbar">   
         <ul class="navbar-items">
             <li><a class="navbar-link" href="Revista.html" >Revista</a></li>
-            <li><a class="navbar-link" href="Notas Web.html" >Notas Web</a></li>
+            <li><a class="navbar-link" href="Notas Web.html" >Notas</a></li>
             <li><a class="navbar-link" href="MapArt.html" >MapArt</a></li>
             <li><a class="navbar-link" href="PixelArte.html" >PixelArte</a></li>
-            <li><a class="navbar-link" href="Cross Beat.html" >Cross Beat</a></li>
+            <li><a class="navbar-link" href="Cross Beat.html" >Cross Beats</a></li>
          </ul>
     </nav>
+<div class="icons">
+        <a href="https://www.instagram.com/proyectoclapps/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+          <a href="https://open.spotify.com/user/3156r6zm3hmkicqrvkf3rhrfznuq?si=a698d601203642f9" target="_blank">
+            <i class="fab fa-spotify"></i>
+        </a>
+        
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>    
+</div>    
     </div>
+
 
 <div class="back-navbar">
     <nav class="navbar-resp">   
@@ -42,13 +60,8 @@
             <li><a class="navbar-linkresp" href="PixelArte.html">PixelArte</a></li>
             <li><a class="navbar-linkresp" href="Cross Beat.html">Cross Beat</a></li>
         </ul>
+    </div>
     </nav>
-</div>
-
-<div class="header-cart">
-    <div class="cart-notification">3</div>
-    <img class="cart-icon" src="./Recursos/cart-shopping-solid.svg" alt="cart">
-</div>
 
 </header>
 
@@ -57,10 +70,6 @@
 
 <section class="content">
     <article class="gallery">
-        <div class="gallery_image-container">
-            <img class="gallery-previous" src="./Recursos/angle-left-solid.svg" alt="previous">
-            <img class="gallery-next" src="./Recursos/angle-right-solid.svg" alt="next">
-        </div> 
 
         <div class="images"> 
             <img id="1" src="Imagen 1" alt="">
@@ -79,12 +88,8 @@
     <div class="details-prices">
         <p class="details-now">$2000</p>
     </div>
-    <div class="details-product-quantify">
-    <div class="input">
-        <img class="input_minus" src="./Recursos/minus-solid.svg" alt="minus">
-        <input class="input_number" type="text" value="0">
-        <img class="input_plus" src="./Recursos/plus-solid.svg" alt="plus">
-    </div>
+    
+</div>
     <button class="details_button"> <img class="icon_cart" src="./Recursos/cart-shopping-solid.svg" alt="cart">Agregar al carrito</button>
     </div>    
     </article>
@@ -129,8 +134,35 @@
 <!--COMPRA DE LA REVISTA-->
 
 
-<footer class="atributtion">
-<a href=""></a>
+<footer>
+
+    <a href="index.html"><img class="logo-footer" src="./Recursos/clapps.png" alt="logo"></a>
+    
+    <div class="icons-footer">
+            <a class="social-icon" href="https://www.instagram.com/proyectoclapps/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+    
+            <a class="social-icon" href="https://">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+    
+              <a class="social-icon" href="https://open.spotify.com/user/3156r6zm3hmkicqrvkf3rhrfznuq?si=a698d601203642f9" target="_blank">
+                <i class="fab fa-spotify"></i>
+            </a>
+            
+            </a>   
+    </div> 
+    <ul class="nav-footer">
+            <li><a class="link-footer" href="index.html" >Inicio</a></li>
+            <li><a class="link-footer" href="Revista.html" >Revista</a></li>
+            <li><a class="link-footer" href="Notas Web.html" >Notas</a></li>
+            <li><a class="link-footer" href="MapArt.html" >MapArt</a></li>
+            <li><a class="link-footer" href="PixelArte.html" >PixelArte</a></li>
+            <li><a class="link-footer" href="Cross Beat.html" >Cross Beats</a></li>
+    </ul>
+    <script src="./main.js"> </script>
 </footer>
+
 </body>
 </html>
