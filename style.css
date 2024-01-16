@@ -93,8 +93,7 @@ a{
 }
 
 .back-navbar{
-    background-color: rgb(255, 255, 255);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -103,7 +102,8 @@ a{
 }
 
 .navbar-resp {
-    background-color: white;
+    background-image: url(./Recursos/fondo-textura-negro.jpg);
+
     color: black;
     height: 100%;
     width: 250px;
@@ -111,17 +111,17 @@ a{
 }
 
 .navbar-items-resp{
-  display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
-  height: 200px;
-  list-style: none;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 200px;
+    list-style: none;
+    margin-top: 20px;
 }
 
 .navbar-linkresp{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 1.1em;
 }
@@ -182,23 +182,47 @@ a{
     gap: 20px;
 }
 
-.images{
-    filter: invert(27%) sepia(0%) saturate(2009%) hue-rotate(348deg) brightness(98%) contrast(83%);
-}
-
-.title{
-    padding-top: 50px;
-    font-size: 300%;
-    text-align: center;
-    padding: auto;
-}
+/* BACKGROUNDS */
 
 .background-inicio{
-    background-color: #9A00BF;
-    height: 200px;
+    background-image: url(./Recursos/388019_stencils_pegatinas_stickers_muralismo_street_art_1024_x_680.jpg);
+    height: 150px;
     width: 100%;
     top: 0;
 }
+
+.background-notes{
+    background-image: url(./Recursos/388019_stencils_pegatinas_stickers_muralismo_street_art_1024_x_680.jpg);
+    height: 150px;
+    width: 100%;
+    top: 0;
+}
+
+.title{
+    color: #ffffff;
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding: auto;
+}
+.text{
+    font-size: 20px;
+    margin: 30px 50px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1115px) {
+    .title {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+/*  FOOTER  */
 
 footer{
     background-image: url(./Recursos/fondo-textura-negro.jpg);
@@ -215,7 +239,7 @@ footer{
 .logo-footer{
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(100%) contrast(83%);
     height: 80px;
-    margin-bottom: .7rem;   
+    margin-bottom: .3rem;   
 }
 
 .nav-footer, .icons-footer{
@@ -223,7 +247,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: .7rem;
+    margin-bottom: .3rem;
 }
 
 .icons-footer i{
@@ -240,7 +264,7 @@ footer{
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
-    margin: 1rem;
+    margin: .5rem;
 }
 
 .social-icon:hover{
@@ -264,13 +288,7 @@ footer{
     opacity: 1;
 }
 
-.text{
-    font-size: 20px;
-    padding: 15px 150px;
-    border: 10px;
-}
-
-
+/* FDFDFSFD */
 .input{
     height: 57px;
     display: flex;
@@ -445,16 +463,23 @@ footer{
 .article-notes{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 15px 12px;
+    margin: 80px 12px;
     gap: 15px;
 
 }
 
 .article-notes img{
     width: 100%;
-    height: 300px;
+    height: 270px;
     border-radius: 3px;
 }
+
+@media (max-width: 1115px) {
+    .article-notes img {
+        height: 200px;
+    }
+}
+
 
 .article-notes p{
     padding-top: 10px;
@@ -480,7 +505,15 @@ footer{
     text-decoration: underline;
 }
 
-
+@media (max-width: 1115px){
+.map, .spotify{
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 350px;
+    
+}
+}
 /*
 
 .title-notes{
@@ -532,6 +565,10 @@ footer{
 
 .enlace{
     padding: 10px 60px;
+}
+
+.images{
+    filter: invert(27%) sepia(0%) saturate(2009%) hue-rotate(348deg) brightness(98%) contrast(83%);
 }
 
 
